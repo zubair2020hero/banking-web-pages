@@ -1,11 +1,11 @@
 
 // transition
-@mixin transition($time) {
-    -webkit-transition: all $time ease-out 0s;
-    -moz-transition: all $time ease-out 0s;
-    -ms-transition: all $time ease-out 0s;
-    -o-transition: all $time ease-out 0s;
-    transition: all $time ease-out 0s;
+@mixin za-transition($time) {
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -ms-transition: $time;
+    -o-transition: $time;
+    transition: $time;
 }
 
 // transform
@@ -24,4 +24,20 @@
     -ms-border-radius: $man;
     -o-border-radius: $man;
     border-radius: $man;
+}
+
+// placeholder input
+@mixin za-placeholder{
+    &::-webkit-input-placeholder{
+        @content;
+    }
+    &:-moz-placeholder{
+          @content;
+    }
+    &::-moz-placeholder{
+          @content;
+    }
+    &:-ms-input-placeholder{
+          @content;
+    }
 }
