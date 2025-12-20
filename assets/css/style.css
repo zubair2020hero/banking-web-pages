@@ -34,6 +34,8 @@
   --za-cr-common-black: #222222;
   --za-cr-theme-green-60: #CAFF33;
   --za-cr-theme-grey-10: #1A1A1A;
+  --za-cr-theme-grey-11: #1C1C1C;
+  --za-cr-theme-grey-15: #262626;
   --za-cr-text-absolute-white: #ffffff;
   --za-cr-text-grey-70: #B3B3B3;
   /* Font Family Declaration */
@@ -80,7 +82,7 @@ body {
   font-family: var(--za-ff-body);
   font-size: var(--za-fs-body-desktop);
   font-weight: var(--za-fw-Light);
-  background-color: var(--za-cr-theme-grey-10);
+  background-color: blueviolet;
   color: var(--za-cr-text-grey-70);
   line-height: 1.5;
 }
@@ -358,6 +360,60 @@ textarea {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+.w-img img {
+  width: 100%;
+}
+
+.m-img img {
+  max-width: 100%;
+}
+
+.fix {
+  overflow: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.z-index-1 {
+  z-index: 1;
+  position: relative;
+}
+
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}
+
+.z-index-3 {
+  z-index: 3;
+  position: relative;
+}
+
+.z-index-11 {
+  z-index: 11;
+  position: relative;
+}
+
+.overflow-y-visible {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.overflow-y-visible {
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
 }
 
 /** Spacing Style **/
@@ -3590,6 +3646,31 @@ textarea {
   color: var(--za-cr-darkBlue);
 }
 
-/*Font Size Head*/
+/***** Menu Style *****/
+.container {
+  max-width: 1620px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1304px;
+  }
+}
+
+/***** Header Area *****/
+.za-header-transparent {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+}
+.za-header-bg {
+  background-color: var(--za-cr-theme-grey-11);
+  border: 1px solid var(--za-cr-theme-grey-15);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

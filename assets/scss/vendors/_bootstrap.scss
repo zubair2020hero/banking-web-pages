@@ -1,0 +1,11 @@
+@use '../helper'as *;
+
+/***** Menu Style *****/
+
+.container {
+    max-width: 1620px;
+
+    @media #{$xl} {
+        max-width: 1304px;
+    }
+}
