@@ -17,3 +17,15 @@ document.querySelectorAll('.za-menu').forEach(function (btn) {
         this.classList.add('active');
     });
 });
+
+// header sticky
+window.addEventListener("scroll", function () {
+    var scroll = window.scrollY;
+    var header = document.getElementById("za-header-sticky");
+
+    if (scroll < 100) {
+        header.classList.remove("header-sticky");
+    } else {
+        header.classList.add("header-sticky");
+    }
+});

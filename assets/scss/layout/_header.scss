@@ -66,3 +66,18 @@
         @include border-radius(50px);
     }
 }
+//---
+#za-header-sticky {
+    width: 100%;
+    @include za-transition(.3s);
+    // এই জিনিসটা নিয়ে আরও লেখা পরা করতে হবে।
+}
+
+.header-sticky {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    // background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
