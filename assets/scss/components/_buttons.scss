@@ -1,2 +1,23 @@
-@use '../helper' as *;
+@use '../helper'as *;
 
+/***** Button Style *****/
+
+.za-btn {
+    padding: 14px 30px;
+    display: inline-block;
+    @include za-transition(.3s);
+    @include border-radius(50px);
+    line-height: 1;
+
+    &:hover {
+        background-color: var(--za-cr-theme-green-60);
+        color: var(--za-cr-theme-grey-11);
+        @include border-radius(50px);
+    }
+
+    &.active {
+        background-color: var(--za-cr-theme-green-60);
+        color: var(--za-cr-theme-grey-11);
+        @include border-radius(50px);
+    }
+}

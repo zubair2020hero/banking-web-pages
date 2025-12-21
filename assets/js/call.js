@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-
+  
     // 01. Mobile Menu
     $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',

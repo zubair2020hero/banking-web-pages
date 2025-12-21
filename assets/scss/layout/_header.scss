@@ -16,4 +16,53 @@
         border: 1px solid var(--za-cr-theme-grey-15);
         @include border-radius(50px);
     }
+
+    // &-left {
+    //     // padding: 6px 0;
+    // }
+
+    // &-middle {
+    //     // padding: 14px 0;
+    // }
+
+    // &-right {
+    //     // padding: 14px 0;
+    // }
+
+    &-mainmenu {
+        & ul {
+            // gap: 20px;
+
+            & li {
+
+                & a {
+                    display: inline-flex;
+                    // color: var(--za-cr-text-absolute-white);
+                    padding: 12px 24px;
+                    @include za-transition(.3s);
+                }
+
+                &:hover {
+                    & a {
+                        background-color: var(--za-cr-theme-grey-15);
+                        @include border-radius(50px);
+                    }
+                }
+            }
+        }
+    }
+
+    // &-button {
+    //     & ul {
+    //         gap: 40px;
+    //     }
+    // }
+}
+
+// এই ব্যপারটা শেষে আবার ধরবো।
+.za-menu {
+    &.active {
+        background-color: var(--za-cr-theme-grey-15);
+        @include border-radius(50px);
+    }
 }
