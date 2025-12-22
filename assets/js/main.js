@@ -20,8 +20,8 @@ document.querySelectorAll('.za-menu').forEach(function (btn) {
 
 // header sticky
 window.addEventListener("scroll", function () {
-    var scroll = window.scrollY;
-    var header = document.getElementById("za-header-sticky");
+    let scroll = window.scrollY;
+    let header = document.getElementById("za-header-sticky");
 
     if (scroll < 100) {
         header.classList.remove("header-sticky");
