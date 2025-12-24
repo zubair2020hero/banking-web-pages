@@ -52,9 +52,9 @@
                         @include border-radius(50px);
                     }
 
-                    & .za-sub-menu {
+                    &>.za-sub-menu {
                         opacity: 1;
-                        visibility: visible;            
+                        visibility: visible;
                         transform: perspective(300px) rotateX(0);
                         // pointer-events: auto;
                     }
@@ -65,11 +65,13 @@
                     // background-color: #222;
                     background-color: var(--za-cr-theme-green-80);
                     color: var(--za-cr-common-black);
+                    width: 200px;
+                    padding: 10px;
                     top: 120%;
                     left: 0;
-                    transform: perspective(300px) rotateX(-18deg);
                     // transform-origin: top;
                     transition: all .3s ease-in-out;
+                    transform: perspective(300px) rotateX(-18deg);
                     opacity: 0;
                     visibility: hidden;
                     // pointer-events: none;
@@ -77,7 +79,8 @@
                     & li {
                         & a {
                             display: block;
-                            transition: all .5s linear;;
+                            transition: all .5s linear;
+                            padding: 10px 30px;
                         }
 
                         &:hover {
@@ -85,6 +88,20 @@
                                 @include border-radius(0);
                                 color: var(--za-cr-text-absolute-white);
                             }
+
+                            & >.za-sub-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: perspective(300px) rotateX(0);
+                            }
+                        }
+
+                        & .za-sub-menu {
+                            top: 0;
+                            left: 100%;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: perspective(300px) rotateX(-18deg);
                         }
                     }
                 }
