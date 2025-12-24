@@ -3771,6 +3771,12 @@ textarea {
   visibility: hidden;
   transform: perspective(300px) rotateX(-18deg);
 }
+.za-header-toggle {
+  background-color: var(--za-cr-theme-green-60);
+  padding: 13px 17px;
+  border-radius: 30px;
+  display: inline-block;
+}
 
 .za-menu.active {
   background-color: brown;
@@ -3797,6 +3803,20 @@ textarea {
   to {
     transform: translateY(0);
   }
+}
+.za-offcanvas {
+  position: fixed;
+  right: 152px;
+  top: 0;
+  padding: 30px 20px;
+  z-index: 99999;
+  width: 400px;
+  background-color: blueviolet;
+  overflow-y: scroll;
+}
+.za-offcanvas-menu ul {
+  flex-direction: column;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
