@@ -33,6 +33,7 @@
   --za-cr-common-white: #ffffff;
   --za-cr-common-black: #222222;
   --za-cr-theme-green-60: #CAFF33;
+  --za-cr-theme-green-80: #E5FF99;
   --za-cr-theme-grey-10: #1A1A1A;
   --za-cr-theme-grey-11: #1C1C1C;
   --za-cr-theme-grey-15: #262626;
@@ -3711,22 +3712,53 @@ textarea {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
-.za-header-mainmenu ul li a {
+.za-header-mainmenu ul li {
+  position: relative;
+}
+.za-header-mainmenu ul li > a {
   display: inline-flex;
   padding: 12px 24px;
   transition: all 0.3s linear;
 }
-.za-header-mainmenu ul li:hover a {
-  background-color: var(--za-cr-theme-grey-15);
+.za-header-mainmenu ul li:hover > a {
+  background-color: brown;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+.za-header-mainmenu ul li:hover .za-sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: perspective(300px) rotateX(0);
+}
+.za-header-mainmenu ul li .za-sub-menu {
+  position: absolute;
+  background-color: var(--za-cr-theme-green-80);
+  color: var(--za-cr-common-black);
+  top: 120%;
+  left: 0;
+  transform: perspective(300px) rotateX(-18deg);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.za-header-mainmenu ul li .za-sub-menu li a {
+  display: block;
+  transition: all 0.5s linear;
+}
+.za-header-mainmenu ul li .za-sub-menu li:hover > a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: var(--za-cr-text-absolute-white);
+}
 
 .za-menu.active {
-  background-color: var(--za-cr-theme-grey-15);
+  background-color: brown;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;

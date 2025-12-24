@@ -18,7 +18,7 @@ document.querySelectorAll('.za-menu').forEach(function (btn) {
     });
 });
 
-// header sticky
+// Header sticky
 window.addEventListener("scroll", function () {
     let scroll = window.scrollY;
     let header = document.getElementById("za-header-sticky");
