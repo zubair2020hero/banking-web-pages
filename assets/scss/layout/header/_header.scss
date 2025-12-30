@@ -30,8 +30,8 @@
 
                 &:hover {
                     &>a {
-                        // background-color: var(--za-cr-theme-grey-15);
-                        background-color: brown;
+                        background-color: var(--za-cr-theme-grey-15);
+                        // background-color: brown;
                         @include border-radius(50px);
                     }
 
@@ -98,17 +98,17 @@
         border-radius: 30px;
         display: inline-block;
     }
-}
 
-// Sticky Menu
-.header-sticky {
-    position: fixed;
-    top: 20px;
-    left: 0;
-    z-index: 999;
-    animation: slideDown .5s linear;
-    transition: all .5s linear;
-    // transition কে mixins যে কোড করা আছে তাকে উন্নত করতে হবে।
+    // Sticky Menu
+    &-sticky {
+        position: fixed;
+        top: 20px;
+        left: 0;
+        z-index: 999;
+        animation: slideDown .5s linear;
+        transition: all .5s linear;
+        // transition কে mixins যে কোড করা আছে তাকে উন্নত করতে হবে।
+    }
 }
 
 @keyframes slideDown {

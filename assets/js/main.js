@@ -14,9 +14,9 @@ window.addEventListener("scroll", function () {
     let header = document.getElementById("za-header-sticky");
 
     if (scroll < 100) {
-        header.classList.remove("header-sticky");
+        header.classList.remove("za-header-sticky");
     } else {
-        header.classList.add("header-sticky");
+        header.classList.add("za-header-sticky");
     }
 });
 
@@ -63,7 +63,7 @@ zaSideMenuToggle.forEach(function (btn) {
 // offcanvas
 document.querySelectorAll('.za-header-toggle').forEach(function (btn) {
     btn.addEventListener('click', function () {
-        document.querySelector('.za-offcanvas') ?.classList.add('za-offcanvas-open');
+        document.querySelector('.za-offcanvas') ?.classList.add('open');
         document.querySelector('.za-offcanvas-overlay') ?.classList.add(
             'za-offcanvas-overlay-open');
     });
@@ -71,7 +71,7 @@ document.querySelectorAll('.za-header-toggle').forEach(function (btn) {
 
 document.querySelectorAll('.za-offcanvas-close-button, .za-offcanvas-overlay').forEach(function (btn) {
     btn.addEventListener('click', function () {
-        document.querySelector('.za-offcanvas') ?.classList.remove('za-offcanvas-open');
+        document.querySelector('.za-offcanvas') ?.classList.remove('open');
         document.querySelector('.za-offcanvas-overlay') ?.classList.remove(
             'za-offcanvas-overlay-open');
     });

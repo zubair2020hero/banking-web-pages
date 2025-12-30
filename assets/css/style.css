@@ -83,7 +83,7 @@ body {
   font-family: var(--za-ff-body);
   font-size: var(--za-fs-body-desktop);
   font-weight: var(--za-fw-Light);
-  background-color: blueviolet;
+  background-color: var(--za-cr-theme-grey-10);
   color: var(--za-cr-text-grey-70);
   line-height: 1.5;
 }
@@ -3721,7 +3721,7 @@ textarea {
   padding: 8px 20px;
 }
 .za-header-mainmenu ul li:hover > a {
-  background-color: brown;
+  background-color: var(--za-cr-theme-grey-15);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -3785,8 +3785,7 @@ textarea {
   border-radius: 30px;
   display: inline-block;
 }
-
-.header-sticky {
+.za-header-sticky {
   position: fixed;
   top: 20px;
   left: 0;
@@ -3816,7 +3815,7 @@ textarea {
   overflow-y: scroll;
   transform: translateX(100%);
 }
-.za-offcanvas.za-offcanvas-open {
+.za-offcanvas.open {
   transform: translateX(0);
 }
 @media (max-width: 767px) {
@@ -3829,7 +3828,10 @@ textarea {
     width: 400px;
   }
 }
-
+.za-offcanvas-close i {
+  font-size: 24px;
+  color: #fff;
+}
 .za-offcanvas-overlay {
   position: fixed;
   top: 0;
@@ -3842,7 +3844,6 @@ textarea {
   transition: 0.3s;
   z-index: 99994;
 }
-
 .za-offcanvas-overlay-open {
   opacity: 1;
   visibility: visible;
@@ -3859,7 +3860,7 @@ textarea {
 }
 .za-offcanvas-menu ul li a {
   display: block;
-  padding: 6px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
 .za-offcanvas-menu ul li.active > a {
@@ -3883,7 +3884,7 @@ textarea {
 
 .za-mobileMenu-close {
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 0;
   padding: 0 0;
   border: 1px solid #fff;
