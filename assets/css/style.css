@@ -92,7 +92,7 @@ body {
     font-size: var(--za-fs-body-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   body {
     font-size: var(--za-fs-body-mobile);
   }
@@ -123,7 +123,7 @@ h1 {
     font-size: var(--za-fs-h1-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   h1 {
     font-size: var(--za-fs-h1-mobile);
   }
@@ -137,7 +137,7 @@ h2 {
     font-size: var(--za-fs-h2-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   h2 {
     font-size: var(--za-fs-h2-mobile);
   }
@@ -151,7 +151,7 @@ h3 {
     font-size: var(--za-fs-h3-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   h3 {
     font-size: var(--za-fs-h3-mobile);
   }
@@ -165,7 +165,7 @@ h4 {
     font-size: var(--za-fs-h4-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   h4 {
     font-size: var(--za-fs-h4-mobile);
   }
@@ -179,7 +179,7 @@ h5 {
     font-size: var(--za-fs-h5-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   h5 {
     font-size: var(--za-fs-h5-mobile);
   }
@@ -193,7 +193,7 @@ h6 {
     font-size: var(--za-fs-h6-laptop);
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767) {
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   h6 {
     font-size: var(--za-fs-h6-mobile);
   }
@@ -3713,12 +3713,12 @@ textarea {
   border-radius: 50px;
 }
 .za-header-mainmenu ul li {
+  display: inline-block;
   position: relative;
 }
-.za-header-mainmenu ul li > a {
-  display: inline-flex;
-  padding: 12px 24px;
-  transition: all 0.3s linear;
+.za-header-mainmenu ul li a {
+  display: inline-block;
+  padding: 8px 20px;
 }
 .za-header-mainmenu ul li:hover > a {
   background-color: brown;
@@ -3728,23 +3728,31 @@ textarea {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
-.za-header-mainmenu ul li:hover > .za-sub-menu {
+.za-header-mainmenu ul li:hover .za-sub-menu {
   opacity: 1;
   visibility: visible;
   transform: perspective(300px) rotateX(0);
 }
 .za-header-mainmenu ul li .za-sub-menu {
   position: absolute;
-  background-color: var(--za-cr-theme-green-80);
-  color: var(--za-cr-common-black);
-  width: 200px;
-  padding: 10px;
   top: 120%;
   left: 0;
+  width: 200px;
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: var(--za-cr-theme-green-60);
+  color: #222;
   transition: all 0.3s ease-in-out;
   transform: perspective(300px) rotateX(-18deg);
   opacity: 0;
   visibility: hidden;
+}
+.za-header-mainmenu ul li .za-sub-menu li {
+  display: block;
 }
 .za-header-mainmenu ul li .za-sub-menu li a {
   display: block;
@@ -3752,11 +3760,11 @@ textarea {
   padding: 10px 30px;
 }
 .za-header-mainmenu ul li .za-sub-menu li:hover > a {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   color: var(--za-cr-text-absolute-white);
 }
 .za-header-mainmenu ul li .za-sub-menu li:hover > .za-sub-menu {
@@ -3778,15 +3786,6 @@ textarea {
   display: inline-block;
 }
 
-.za-menu.active {
-  background-color: brown;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-}
-
 .header-sticky {
   position: fixed;
   top: 20px;
@@ -3806,7 +3805,7 @@ textarea {
 }
 .za-offcanvas {
   position: fixed;
-  right: -400px;
+  right: 0;
   top: 0;
   padding: 76px 20px 0 30px;
   z-index: 99999;
@@ -3815,35 +3814,20 @@ textarea {
   background-color: blueviolet;
   transition: 0.3s;
   overflow-y: scroll;
+  transform: translateX(100%);
 }
 .za-offcanvas.za-offcanvas-open {
-  right: 0;
+  transform: translateX(0);
 }
-.za-offcanvas-menu ul {
-  flex-direction: column;
-  padding-left: 0;
+@media (max-width: 767px) {
+  .za-offcanvas {
+    width: 100%;
+  }
 }
-.za-offcanvas .za-menu.active {
-  background-color: green;
-  border-radius: inherit;
-}
-
-.za-sub-menu {
-  display: none;
-}
-
-.za-sub-menu.open {
-  display: block;
-}
-
-.za-submenu-toggle {
-  cursor: pointer;
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-li.active > .za-submenu-toggle {
-  transform: rotate(90deg);
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .za-offcanvas {
+    width: 400px;
+  }
 }
 
 .za-offcanvas-overlay {
@@ -3862,6 +3846,52 @@ li.active > .za-submenu-toggle {
 .za-offcanvas-overlay-open {
   opacity: 1;
   visibility: visible;
+}
+
+.za-offcanvas-menu ul li {
+  position: relative;
+}
+.za-offcanvas-menu ul li:last-child a {
+  border: 0;
+}
+.za-offcanvas-menu ul li:hover > a {
+  background-color: brown;
+}
+.za-offcanvas-menu ul li a {
+  display: block;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+.za-offcanvas-menu ul li.active > a {
+  color: greenyellow;
+}
+.za-offcanvas-menu ul li.active > button.za-mobileMenu-close i {
+  transform: rotate(90deg);
+}
+.za-offcanvas-menu ul li .za-sub-menu {
+  margin-left: 20px;
+  display: none;
+  padding: 0 0 0 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: var(--za-cr-theme-grey-11);
+  color: #fff;
+}
+
+.za-mobileMenu-close {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  padding: 0 0;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+}
+.za-mobileMenu-close i {
+  transition: all 0.3s linear;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+@use '../../helper/'as *;
+
+// offcanvas Area
+.za-offcanvas {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 76px 20px 0 30px;
+    z-index: 99999;
+    width: 400px;
+    height: 100%;
+    background-color: blueviolet;
+    transition: 0.3s;
+    overflow-y: scroll;
+    transform: translateX(100%);
+
+    &.za-offcanvas-open {
+        transform: translateX(0);
+    }
+
+    @media #{$xs} {
+        width: 100%;
+        // যেখান থেকে আমি এই কোড নিছি সেখানে $xs ব্যবহার করছে  তা কাজ করছে Screen 368px কিন্তু আমারটায় কাজ করে নাই আর সেই জন্য আমাকে $od ব্যবহার করথে হইছে জোর করে। [এখানে অন্য Pro Person দিয়ে রিভিও দেখালে ভাল হত]
+    }
+
+    @media #{$sm} {
+        width: 400px;
+    }
+ 
+}
+
+.za-offcanvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 99994;
+}
+
+.za-offcanvas-overlay-open {
+    opacity: 1;
+    visibility: visible;
+}

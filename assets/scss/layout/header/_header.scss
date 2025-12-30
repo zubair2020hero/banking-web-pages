@@ -1,0 +1,122 @@
+@use '../../helper/'as *;
+
+/***** Header Area *****/
+
+.za-header {
+    &-transparent {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    &-bg {
+        background-color: var(--za-cr-theme-grey-11);
+        // background: rgb(99, 99, 99);
+        border: 1px solid var(--za-cr-theme-grey-15);
+        @include border-radius(50px);
+    }
+
+    &-mainmenu {
+        & ul {
+            & li {
+                display: inline-block;
+                position: relative;
+
+                & a {
+                    display: inline-block;
+                    padding: 8px 20px;
+                }
+
+                &:hover {
+                    &>a {
+                        // background-color: var(--za-cr-theme-grey-15);
+                        background-color: brown;
+                        @include border-radius(50px);
+                    }
+
+                    & .za-sub-menu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: perspective(300px) rotateX(0);
+                    }
+                }
+
+                & .za-sub-menu {
+                    position: absolute;
+                    top: 120%;
+                    left: 0;
+                    width: 200px;
+                    padding: 10px;
+                    @include border-radius(10px);
+                    background-color: var(--za-cr-theme-green-60);
+                    color: #222;
+                    transition: all .3s ease-in-out;
+                    transform: perspective(300px) rotateX(-18deg);
+                    opacity: 0;
+                    visibility: hidden;
+
+                    & li {
+                        display: block;
+
+                        & a {
+                            display: block;
+                            transition: all .5s linear;
+                            padding: 10px 30px;
+                        }
+
+                        &:hover {
+                            &>a {
+                                @include border-radius(5px);
+                                color: var(--za-cr-text-absolute-white);
+                            }
+
+                            &>.za-sub-menu {
+                                opacity: 1;
+                                visibility: visible;
+                                transform: perspective(300px) rotateX(0);
+                            }
+                        }
+
+                        & .za-sub-menu {
+                            top: 0;
+                            left: 100%;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: perspective(300px) rotateX(-18deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-toggle {
+        background-color: var(--za-cr-theme-green-60);
+        // padding: 13px 17px;
+        padding: 10px 18px;
+        border-radius: 30px;
+        display: inline-block;
+    }
+}
+
+// Sticky Menu
+.header-sticky {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+    animation: slideDown .5s linear;
+    transition: all .5s linear;
+    // transition কে mixins যে কোড করা আছে তাকে উন্নত করতে হবে।
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

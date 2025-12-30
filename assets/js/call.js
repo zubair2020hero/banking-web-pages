@@ -2,11 +2,11 @@
     "use strict";
   
     // 01. Mobile Menu
-    $('#mobile-menu').meanmenu({
-        meanMenuContainer: '.mobile-menu',
-        meanScreenWidth: "1199",
-        meanExpand: ['<i class="fa-solid fa-plus"></i>'],
-    });
+    // $('#za-mobile-menu-active').meanmenu({
+    //     meanMenuContainer: '.za-offcanvas-menu',
+    //     meanScreenWidth: "1199",
+    //     meanExpand: ['<i class="fa-solid fa-plus"></i>'],
+    // });
 
     // 02. Sidebar Js
     $(".za-menu-toggle").on("click", function () {
