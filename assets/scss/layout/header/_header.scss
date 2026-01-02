@@ -26,6 +26,7 @@
                 & a {
                     display: inline-block;
                     padding: 8px 20px;
+                    font-weight: var(--za-fw-regular);
                 }
 
                 &:hover {
@@ -102,12 +103,15 @@
     // Sticky Menu
     &-sticky {
         position: fixed;
-        top: 20px;
+        top: 10px;
         left: 0;
         z-index: 999;
         animation: slideDown .5s linear;
         transition: all .5s linear;
         // transition কে mixins যে কোড করা আছে তাকে উন্নত করতে হবে।
+        .za-header-bg{
+            padding: 8px 30px;
+        }
     }
 }
 

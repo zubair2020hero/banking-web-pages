@@ -3686,7 +3686,7 @@ textarea {
   color: var(--za-cr-darkBlue);
 }
 
-/***** Menu Style *****/
+/***** Bootstrap Style *****/
 .container {
   max-width: 1620px;
 }
@@ -3694,6 +3694,10 @@ textarea {
   .container {
     max-width: 1304px;
   }
+}
+
+.row {
+  --bs-gutter-x: 20px;
 }
 
 /***** Header Area *****/
@@ -3719,6 +3723,7 @@ textarea {
 .za-header-mainmenu ul li a {
   display: inline-block;
   padding: 8px 20px;
+  font-weight: var(--za-fw-regular);
 }
 .za-header-mainmenu ul li:hover > a {
   background-color: var(--za-cr-theme-grey-15);
@@ -3787,11 +3792,14 @@ textarea {
 }
 .za-header-sticky {
   position: fixed;
-  top: 20px;
+  top: 10px;
   left: 0;
   z-index: 999;
   animation: slideDown 0.5s linear;
   transition: all 0.5s linear;
+}
+.za-header-sticky .za-header-bg {
+  padding: 8px 30px;
 }
 
 @keyframes slideDown {
@@ -3893,6 +3901,37 @@ textarea {
 }
 .za-mobileMenu-close i {
   transition: all 0.3s linear;
+}
+
+/***** Hero Area *****/
+.za-hero-content {
+  margin: 100px 0 0 0;
+}
+.za-hero-sub-title {
+  color: var(--za-cr-text-absolute-white);
+  background-color: blueviolet;
+  font-size: 18px;
+  font-weight: var(--za-fw-Light);
+  padding: 5px 20px;
+  width: 357px;
+  height: 44px;
+  margin: 0;
+  line-height: 1.8;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+.za-hero-sub-title::before {
+  content: "";
+  width: 19.5px;
+  height: 19.5px;
+  display: inline-block;
+  background-color: var(--za-cr-theme-green-60);
+  mask-image: url(/banking-web-pages/code/assets/img/icon/hero-icon_1.svg);
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 @use '../helper'as *;
 
-/***** Menu Style *****/
+/***** Bootstrap Style *****/
 
 .container {
     max-width: 1620px;
@@ -8,4 +8,9 @@
     @media #{$xl} {
         max-width: 1304px;
     }
+}
+
+
+.row {
+  --bs-gutter-x: 20px;
 }
