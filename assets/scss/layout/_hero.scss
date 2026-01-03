@@ -4,34 +4,56 @@
 
 .za-hero {
     &-content {
-        margin: 100px 0 0 0;
+        padding: 298px 0 150px 0;
     }
 
     &-sub {
         &-title {
             color: var(--za-cr-text-absolute-white);
-            // background-color: var(--za-cr-theme-grey-15);
-            background-color: blueviolet;
+            background-color: var(--za-cr-theme-grey-15);
+            // background-color: blueviolet;
             font-size: 18px;
             font-weight: var(--za-fw-Light);
             padding: 5px 20px;
-            width: 357px;
+            width: 58%;
             height: 44px;
             margin: 0;
             // line-height: 1.5;
             line-height: 1.8;
             @include border-radius(50px);
 
+            @media #{$xl,$lg,$md} {
+                font-size: 14px;
+                height: 40px;
+                line-height: 1.5;
+                padding: 8px 14px;
+            }
+
             &::before {
                 content: '';
                 width: 19.5px;
                 height: 19.5px;
+                vertical-align: middle;
+                margin-right: 6px;
                 display: inline-block;
                 background-color: var(--za-cr-theme-green-60);
-                mask-image: url(/banking-web-pages/code/assets/img/icon/hero-icon_1.svg);
+                mask-image: url(../img/icon/hero-icon_1.svg);
                 mask-repeat: no-repeat;
                 mask-size: cover;
             }
+        }
+    }
+
+    &-title {
+        font-size: 48px;
+        line-height: 1.5;
+
+        & span {
+            color: var(--za-cr-theme-green-60);
+        }
+
+        @media #{$xl,$lg,$md} {
+            font-size: 38px;
         }
     }
 }

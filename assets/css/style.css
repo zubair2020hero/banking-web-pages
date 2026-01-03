@@ -3645,6 +3645,7 @@ textarea {
   -o-border-radius: 50px;
   border-radius: 50px;
   line-height: 1;
+  font-weight: var(--za-fw-regular);
 }
 .za-btn:hover {
   background-color: var(--za-cr-theme-green-60);
@@ -3663,6 +3664,30 @@ textarea {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+}
+.za-btn-two {
+  border: 2px solid transparent;
+  padding: 14px 30px;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  line-height: 1;
+  background-color: var(--za-cr-theme-green-60);
+  color: var(--za-cr-theme-grey-11);
+  transition: all 0.5s linear;
+  font-weight: var(--za-fw-regular);
+}
+.za-btn-two:hover {
+  border: 2px solid var(--za-cr-theme-green-60);
+  background-color: transparent;
 }
 
 /*Section tite*/
@@ -3905,15 +3930,15 @@ textarea {
 
 /***** Hero Area *****/
 .za-hero-content {
-  margin: 100px 0 0 0;
+  padding: 298px 0 150px 0;
 }
 .za-hero-sub-title {
   color: var(--za-cr-text-absolute-white);
-  background-color: blueviolet;
+  background-color: var(--za-cr-theme-grey-15);
   font-size: 18px;
   font-weight: var(--za-fw-Light);
   padding: 5px 20px;
-  width: 357px;
+  width: 58%;
   height: 44px;
   margin: 0;
   line-height: 1.8;
@@ -3923,15 +3948,37 @@ textarea {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-hero-sub-title {
+    font-size: 14px;
+    height: 40px;
+    line-height: 1.5;
+    padding: 8px 14px;
+  }
+}
 .za-hero-sub-title::before {
   content: "";
   width: 19.5px;
   height: 19.5px;
+  vertical-align: middle;
+  margin-right: 6px;
   display: inline-block;
   background-color: var(--za-cr-theme-green-60);
-  mask-image: url(/banking-web-pages/code/assets/img/icon/hero-icon_1.svg);
+  mask-image: url(../img/icon/hero-icon_1.svg);
   mask-repeat: no-repeat;
   mask-size: cover;
+}
+.za-hero-title {
+  font-size: 48px;
+  line-height: 1.5;
+}
+.za-hero-title span {
+  color: var(--za-cr-theme-green-60);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-hero-title {
+    font-size: 38px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
