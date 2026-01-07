@@ -3938,7 +3938,7 @@ textarea {
   font-size: 18px;
   font-weight: var(--za-fw-Light);
   padding: 5px 20px;
-  width: 58%;
+  width: 50%;
   height: 44px;
   margin: 0;
   line-height: 1.8;
@@ -3979,6 +3979,50 @@ textarea {
   .za-hero-title {
     font-size: 38px;
   }
+}
+.za-hero-card {
+  width: 515.02px;
+  height: 373.45px;
+  padding: 34.68px;
+  border-radius: 10.4px;
+  border: 0.87px solid transparent;
+  background: linear-gradient(55deg, #1A1A1A 0%, #1A1A1A 100%) padding-box, linear-gradient(54deg, #CAFF33 0%, #262626 25%, #262626 75%, #CAFF33 100%) border-box;
+}
+.za-hero-card-item {
+  width: 445.66px;
+  border: 0.87px solid var(--za-cr-theme-grey-15);
+  border-radius: 10.4px;
+  background-color: var(--za-cr-theme-grey-11);
+  padding: 13.87px 20.81px 13.87px 20.81px;
+  z-index: 111;
+}
+.za-hero-card-item-name {
+  gap: 8.67px;
+}
+.za-hero-card-item-text p {
+  margin-bottom: 5px;
+}
+.za-hero-card-item-text h6 {
+  margin-bottom: 0;
+}
+.za-hero-card-item-price h5 {
+  margin-bottom: 0;
+}
+.za-hero-card .card-style-2 {
+  width: 410.98px;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+  opacity: 0.5;
+}
+.za-hero-card .card-style-3 {
+  width: 376.29px;
+  top: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=style.css.map */
