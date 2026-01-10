@@ -64,7 +64,7 @@
 
     &-card {
         width: 515.02px;
-        height: 373.45px;
+        // height: 373.45px;
         padding: 34.68px;
         border-radius: 10.4px;
         border: 0.87px solid transparent;
@@ -79,7 +79,11 @@
                 #CAFF33 100%) border-box;
 
         &-top {
-            //    position: relative;
+            height: 225.02px;
+        }
+
+        &-title {
+            font-size: 17.34px;
         }
 
         &-item {
@@ -127,6 +131,44 @@
             transform: translateX(-50%);
             z-index: 1;
             opacity: 0.2;
+        }
+
+        &-money {
+            &-box {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                border: 1px solid var(--za-cr-theme-grey-15);
+                border-radius: 10px;
+                background-color: var(--za-cr-theme-grey-11);
+            }
+
+            &-item {
+                border-right: 1px solid var(--za-cr-theme-grey-15);
+                display: flex;
+                flex-direction: column;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+            &-flag {
+                padding: 18px;
+                border-bottom: 1px solid var(--za-cr-theme-grey-15);
+
+                & p {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-price {
+                padding: 26px 18px;
+
+                & h5 {
+                    margin-bottom: 0;
+                }
+            }
+
         }
     }
 }

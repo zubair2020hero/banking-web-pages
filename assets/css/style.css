@@ -3982,11 +3982,16 @@ textarea {
 }
 .za-hero-card {
   width: 515.02px;
-  height: 373.45px;
   padding: 34.68px;
   border-radius: 10.4px;
   border: 0.87px solid transparent;
   background: linear-gradient(55deg, #1A1A1A 0%, #1A1A1A 100%) padding-box, linear-gradient(54deg, #CAFF33 0%, #262626 25%, #262626 75%, #CAFF33 100%) border-box;
+}
+.za-hero-card-top {
+  height: 225.02px;
+}
+.za-hero-card-title {
+  font-size: 17.34px;
 }
 .za-hero-card-item {
   width: 445.66px;
@@ -4023,6 +4028,34 @@ textarea {
   transform: translateX(-50%);
   z-index: 1;
   opacity: 0.2;
+}
+.za-hero-card-money-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--za-cr-theme-grey-15);
+  border-radius: 10px;
+  background-color: var(--za-cr-theme-grey-11);
+}
+.za-hero-card-money-item {
+  border-right: 1px solid var(--za-cr-theme-grey-15);
+  display: flex;
+  flex-direction: column;
+}
+.za-hero-card-money-item:last-child {
+  border-right: none;
+}
+.za-hero-card-money-flag {
+  padding: 18px;
+  border-bottom: 1px solid var(--za-cr-theme-grey-15);
+}
+.za-hero-card-money-flag p {
+  margin-bottom: 0;
+}
+.za-hero-card-money-price {
+  padding: 26px 18px;
+}
+.za-hero-card-money-price h5 {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
