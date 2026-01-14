@@ -4011,7 +4011,44 @@ textarea {
   padding: 34.68px;
   border-radius: 10.4px;
   border: 0.87px solid transparent;
+  z-index: 22;
   background: linear-gradient(55deg, #1A1A1A 0%, #1A1A1A 100%) padding-box, linear-gradient(54deg, #CAFF33 0%, #262626 25%, #262626 75%, #CAFF33 100%) border-box;
+}
+.za-hero-card-position .position-image {
+  z-index: 2;
+  top: 10px;
+  right: -700px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-hero-card-position .position-image {
+    right: -580px;
+  }
+}
+.za-hero-card-position .position-image img {
+  width: 417.95px;
+  height: 382.73px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-hero-card-position .position-image img {
+    width: 250px;
+    height: 225px;
+  }
+}
+.za-hero-card-position .position-price {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  z-index: 222;
+  top: 0;
+  right: 0;
+}
+.za-hero-card-position .position-currency {
+  width: 100px;
+  height: 100px;
+  background-color: yellowgreen;
+  z-index: 222;
+  bottom: -100px;
+  right: 0;
 }
 .za-hero-card-top {
   height: 225.02px;
@@ -4084,22 +4121,18 @@ textarea {
 .za-hero-card-money-price {
   padding: 7px 11px;
 }
-.za-hero-card-money-price h5 {
-  margin-bottom: 0;
-}
 
+/*Currency Style*/
 .za--selected-currency {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .za--selected-currency img {
   width: 34.68px;
   height: 34.68px;
   border-radius: 100px;
 }
-
 .za--selected-currency span {
   font-size: 15.61px;
   font-weight: var(--za-fw-regular);
@@ -4110,30 +4143,48 @@ textarea {
   font-size: 14px;
   color: #555;
 }
-
 .za--currency-list {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--za-cr-theme-green-60);
+  color: var(--za-cr-common-black);
+  font-weight: var(--za-fw-regular);
   width: 100%;
   max-height: 200px;
   overflow-y: auto;
   z-index: 99;
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--za-cr-common-black) var(--za-cr-theme-green-60);
 }
-
+.za--currency-list::-webkit-scrollbar {
+  width: 8px;
+}
+.za--currency-list::-webkit-scrollbar-track {
+  background: var(--za-cr-theme-green-60);
+  border-radius: 10px;
+}
+.za--currency-list::-webkit-scrollbar-thumb {
+  background-color: var(--za-cr-common-black);
+  border-radius: 10px;
+  border: 2px solid var(--za-cr-theme-green-60);
+}
+.za--currency-list::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}
 .za--currency-list li {
   list-style: none;
   padding: 8px;
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
-
 .za--currency-list li:hover {
-  background: #f2f2f2;
+  background: var(--za-cr-common-black);
+  color: var(--za-cr-text-absolute-white);
 }
 
 .za--amount {
@@ -4141,26 +4192,17 @@ textarea {
   font-size: 17.34px;
   font-weight: var(--za-fw-medium);
   padding: 6px;
-}
-
-/* Chrome, Edge, Safari */
-.za--amount::-webkit-inner-spin-button,
-.za--amount::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-.za--amount {
-  -moz-appearance: textfield;
-}
-
-.za--amount {
   border: none !important;
   border-bottom: none !important;
   outline: none;
   box-shadow: none;
   background: transparent;
+  /* Firefox */
+  -moz-appearance: textfield;
+}
+.za--amount::-webkit-inner-spin-button, .za--amount::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

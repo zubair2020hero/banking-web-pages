@@ -84,7 +84,7 @@ const currencies = [
     {code:"USD", name:"United States Dollar", flag:"us"},
     {code:"BDT", name:"Bangladeshi Taka", flag:"bd"},
     {code:"INR", name:"Indian Rupee", flag:"in"},
-    {code:"EUR", name:"Euro", flag:"eu"}
+    {code:"EUR", name:"Europe Euro", flag:"eu"}
 ];
 
 let fromCurrency = "USD";
@@ -140,7 +140,7 @@ document.getElementById("convert-btn").addEventListener("click", async () => {
     const toAmount = document.getElementById("toAmount");
 
     const res = await fetch(
-        `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`
+        `https://open.er-api.com/v6/latest/${fromCurrency}`
     );
     const data = await res.json();
     const rate = data.rates[toCurrency];
