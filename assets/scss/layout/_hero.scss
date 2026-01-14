@@ -117,7 +117,7 @@
 
         & .card-style-2 {
             width: 410.98px;
-            top: 76px;
+            top: 84px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 11;
@@ -157,12 +157,16 @@
                 border-bottom: 1px solid var(--za-cr-theme-grey-15);
 
                 & p {
+                    margin-top: 10px;
+                    font-size: 13.87px;
+                    font-weight: var(--za-fw-Light);
+                    color: #fff;
                     margin-bottom: 0;
                 }
             }
 
             &-price {
-                padding: 26px 18px;
+                padding: 7px 11px;
 
                 & h5 {
                     margin-bottom: 0;
@@ -171,4 +175,81 @@
 
         }
     }
+}
+
+
+//---
+.za--selected-currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.za--selected-currency img {
+    width: 34.68px;
+    height: 34.68px;
+    border-radius: 100px;
+}
+
+.za--selected-currency span {
+    font-size: 15.61px;
+    font-weight: var(--za-fw-regular);
+    color: var(--za-cr-text-white-90);
+}
+
+.za--currency-name {
+    font-size: 14px;
+    color: #555;
+}
+
+.za--currency-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 99;
+}
+
+.za--currency-list li {
+    list-style: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.za--currency-list li:hover {
+    background: #f2f2f2;
+}
+
+.za--amount {
+    width: 100%;
+    font-size: 17.34px;
+    font-weight: var(--za-fw-medium);
+    padding: 6px;
+}
+
+/* Chrome, Edge, Safari */
+.za--amount::-webkit-inner-spin-button,
+.za--amount::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.za--amount {
+    -moz-appearance: textfield;
+}
+
+.za--amount {
+    border: none !important;
+    border-bottom: none !important;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
 }

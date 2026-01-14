@@ -40,5 +40,23 @@
                 background-color: transparent;
             }
         }
+
+        &-three {
+            border: 2px solid transparent;
+            padding: 14px 30px;
+            display: inline-block;
+            @include za-transition(.3s);
+            @include border-radius(50px);
+            line-height: 1;
+            background-color: #22251B;
+            color: var(--za-cr-theme-green-65);
+            transition: all .5s linear;
+            font-weight: var(--za-fw-regular);
+
+            &:hover {
+                border: 2px solid var(--za-cr-theme-green-60);
+                background-color: transparent;
+            }
+        }
     }
 }

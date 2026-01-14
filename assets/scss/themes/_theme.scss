@@ -219,14 +219,14 @@ textarea {
     height: 50px;
     width: 100%;
     line-height: 1;
-    font-size: 15;
-    color: var(--za-cr-common-black);
+    font-size: 15px;
+    color: var(--za-cr-common-white);
     border: 0;
     border-bottom: 1px solid #57595C;
     font-weight: var(--za-fw-medium);
 
     @include za-placeholder {
-        color: #57595C;
+        color: var(--za-cr-common-white);
     }
 
     &:focus {

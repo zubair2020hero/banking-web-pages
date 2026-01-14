@@ -198,24 +198,43 @@
                                 <div class="za-hero-card-bottom">
                                     <h5 class="za-hero-card-title mb-20">Money Exchange</h5>
                                     <div class="za-hero-card-money-box">
+
+                                        <!-- FROM -->
                                         <div class="za-hero-card-money-item">
-                                            <div class="za-hero-card-money-flag">
-                                                <img src="assets/img/hero/hero-flag-in.png" alt="flag">
-                                                <p>Indian Rupees</p>
+                                            <div class="za-hero-card-money-flag za--currency-dropdown p-relative" data-type="from">
+                                                <div class="za--selected-currency">
+                                                    <img src="https://flagcdn.com/w40/bd.png">
+                                                    <span>BDT</span>
+                                                </div>
+                                                <p class="za--currency-name">United States Dollar</p>
+                                                <ul class="za--currency-list"></ul>
                                             </div>
+
                                             <div class="za-hero-card-money-price">
-                                                <h5>5,0000</h5>
+                                                <input type="number" id="fromAmount" class="za--amount" placeholder="5,0000">
                                             </div>
                                         </div>
+
+                                        <!-- TO -->
                                         <div class="za-hero-card-money-item">
-                                            <div class="za-hero-card-money-flag">
-                                                <img src="assets/img/hero/hero-flag-us.png" alt="flag">
-                                                <p>United States Dollar</p>
+                                            <div class="za-hero-card-money-flag za--currency-dropdown p-relative" data-type="to">
+                                                <div class="za--selected-currency">
+                                                    <img src="https://flagcdn.com/w40/us.png"">
+                                                    <span>USD</span>
+                                                </div>
+                                                <p class="za--currency-name">Bangladeshi Taka</p>
+                                                <ul class="za--currency-list"></ul>
                                             </div>
+
                                             <div class="za-hero-card-money-price">
-                                                <h5>12.00</h5>
+                                                <input type="number" id="toAmount" class="za--amount" placeholder="12.00">
                                             </div>
                                         </div>
+
+                                    </div>
+
+                                    <div class="za-hero-btn mt-25">
+                                        <a class="za-btn-three d-block text-center" id="convert-btn">Exchange</a>
                                     </div>
                                 </div>
                             </div>
