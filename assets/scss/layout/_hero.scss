@@ -5,6 +5,10 @@
 .za-hero {
     &-content {
         padding: 298px 0 150px 0;
+
+        @media #{$xs} {
+            padding-top: 210px;
+        }
     }
 
     &-sub {
@@ -23,11 +27,24 @@
             line-height: 1.8;
             @include border-radius(50px);
 
+            @media #{$lg,$md,$md,$sm,$xs,$od} {
+                margin: 0 auto;
+            }
+
             @media #{$xl,$lg,$md} {
                 font-size: 14px;
                 height: 40px;
                 line-height: 1.5;
                 padding: 8px 14px;
+            }
+
+            @media #{$sm,$xs,$od} {
+                font-size: 12px;
+                line-height: 2.9;
+            }
+
+            @media #{$xs} {
+                width: 95%;
             }
 
             &::before {
@@ -56,10 +73,16 @@
         @media #{$xl,$lg,$md} {
             font-size: 38px;
         }
+
+        @media #{$xs} {
+            font-size: 28px;
+        }
     }
 
     &-right {
-        // background-color: #585858;
+        @media #{$lg,$md,$md,$sm,$xs,$od} {
+            margin-top: 80px;
+        }
     }
 
     &-card {
@@ -79,6 +102,16 @@
                 #262626 75%,
                 #CAFF33 100%) border-box;
 
+        @media #{$xl} {
+            width: 410.19px;
+            padding: 27.55px;
+        }
+
+        @media #{$xs} {
+            width: 305.45px;
+            padding: 20.68px;
+        }
+
         &-position {
             & .position {
                 &-image {
@@ -86,15 +119,25 @@
                     top: 10px;
                     right: -700px;
 
-                    @media #{$xl,$lg,$md} {
-                        right: -580px;
+                    @media #{$xl} {
+                        right: -480px;
                     }
+
+                    @media #{$lg,$md,$sm,$xs} {
+                        right: -618px;
+                    }
+
 
                     & img {
                         width: 417.95px;
                         height: 382.73px;
 
-                        @media #{$xl,$lg,$md} {
+                        @media #{$lg,$md,$sm,$xs} {
+                            display: none;
+
+                        }
+
+                        @media #{$xl,$lg,$md,$xs} {
                             width: 250px;
                             height: 225px;
                         }
@@ -107,7 +150,7 @@
                     background-color: #22251B;
                     border-radius: 10.4px;
                     z-index: 222;
-                    top: -32px;
+                    top: -55px;
                     right: -124px;
                     gap: 8px;
                     padding: 13.87px 17.34px;
@@ -141,10 +184,23 @@
                     // gap: 14px;
                     padding: 10px;
 
+                    @media #{$xl} {
+                        right: -480px;
+                        width: 342.87px;
+                    }
+
+                    @media #{$xs} {
+                        right: -338px;
+                    }
+
                     & h6 {
                         font-size: 15px;
                         font-weight: var(--za-fw-regular);
                         margin: 0 auto;
+
+                        @media #{$xl,$lg,$md,$sm,$xs} {
+                            font-size: 12px;
+                        }
                     }
 
                     & .currency-icons {
@@ -174,6 +230,14 @@
             padding: 13.87px 20.81px 13.87px 20.81px;
             z-index: 111;
 
+            @media #{$xl} {
+                width: 355.1px;
+            }
+
+            @media #{$xs} {
+                width: 264.43px;
+            }
+
             &-name {
                 gap: 8.67px;
             }
@@ -202,6 +266,14 @@
             transform: translateX(-50%);
             z-index: 11;
             opacity: 0.5;
+
+            @media #{$xl} {
+                width: 327.55px;
+            }
+
+            @media #{$xs} {
+                width: 243.91px;
+            }
         }
 
         & .card-style-3 {
@@ -211,6 +283,14 @@
             transform: translateX(-50%);
             z-index: 1;
             opacity: 0.2;
+
+            @media #{$xl} {
+                width: 300.01px;
+            }
+
+            @media #{$xs} {
+                width: 223.4px;
+            }
         }
 
         &-money {

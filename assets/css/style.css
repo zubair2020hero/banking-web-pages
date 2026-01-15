@@ -3958,6 +3958,11 @@ textarea {
 .za-hero-content {
   padding: 298px 0 150px 0;
 }
+@media (max-width: 767px) {
+  .za-hero-content {
+    padding-top: 210px;
+  }
+}
 .za-hero-sub-title {
   color: var(--za-cr-text-absolute-white);
   background-color: var(--za-cr-theme-grey-15);
@@ -3974,12 +3979,28 @@ textarea {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px), only screen and (min-width: 300px) and (max-width: 750px) {
+  .za-hero-sub-title {
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .za-hero-sub-title {
     font-size: 14px;
     height: 40px;
     line-height: 1.5;
     padding: 8px 14px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px), only screen and (min-width: 300px) and (max-width: 750px) {
+  .za-hero-sub-title {
+    font-size: 12px;
+    line-height: 2.9;
+  }
+}
+@media (max-width: 767px) {
+  .za-hero-sub-title {
+    width: 95%;
   }
 }
 .za-hero-sub-title::before {
@@ -4006,6 +4027,16 @@ textarea {
     font-size: 38px;
   }
 }
+@media (max-width: 767px) {
+  .za-hero-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px), only screen and (min-width: 300px) and (max-width: 750px) {
+  .za-hero-right {
+    margin-top: 80px;
+  }
+}
 .za-hero-card {
   width: 515.02px;
   padding: 34.68px;
@@ -4014,21 +4045,43 @@ textarea {
   z-index: 22;
   background: linear-gradient(55deg, #1A1A1A 0%, #1A1A1A 100%) padding-box, linear-gradient(54deg, #CAFF33 0%, #262626 25%, #262626 75%, #CAFF33 100%) border-box;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .za-hero-card {
+    width: 410.19px;
+    padding: 27.55px;
+  }
+}
+@media (max-width: 767px) {
+  .za-hero-card {
+    width: 305.45px;
+    padding: 20.68px;
+  }
+}
 .za-hero-card-position .position-image {
   z-index: 2;
   top: 10px;
   right: -700px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .za-hero-card-position .position-image {
-    right: -580px;
+    right: -480px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .za-hero-card-position .position-image {
+    right: -618px;
   }
 }
 .za-hero-card-position .position-image img {
   width: 417.95px;
   height: 382.73px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .za-hero-card-position .position-image img {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .za-hero-card-position .position-image img {
     width: 250px;
     height: 225px;
@@ -4040,7 +4093,7 @@ textarea {
   background-color: #22251B;
   border-radius: 10.4px;
   z-index: 222;
-  top: -32px;
+  top: -55px;
   right: -124px;
   gap: 8px;
   padding: 13.87px 17.34px;
@@ -4065,10 +4118,26 @@ textarea {
   right: -575px;
   padding: 10px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .za-hero-card-position .position-currency {
+    right: -480px;
+    width: 342.87px;
+  }
+}
+@media (max-width: 767px) {
+  .za-hero-card-position .position-currency {
+    right: -338px;
+  }
+}
 .za-hero-card-position .position-currency h6 {
   font-size: 15px;
   font-weight: var(--za-fw-regular);
   margin: 0 auto;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .za-hero-card-position .position-currency h6 {
+    font-size: 12px;
+  }
 }
 .za-hero-card-position .position-currency .currency-icons {
   background-color: var(--za-cr-theme-grey-10);
@@ -4090,6 +4159,16 @@ textarea {
   padding: 13.87px 20.81px 13.87px 20.81px;
   z-index: 111;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .za-hero-card-item {
+    width: 355.1px;
+  }
+}
+@media (max-width: 767px) {
+  .za-hero-card-item {
+    width: 264.43px;
+  }
+}
 .za-hero-card-item-name {
   gap: 8.67px;
 }
@@ -4110,6 +4189,16 @@ textarea {
   z-index: 11;
   opacity: 0.5;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .za-hero-card .card-style-2 {
+    width: 327.55px;
+  }
+}
+@media (max-width: 767px) {
+  .za-hero-card .card-style-2 {
+    width: 243.91px;
+  }
+}
 .za-hero-card .card-style-3 {
   width: 376.29px;
   top: 125px;
@@ -4117,6 +4206,16 @@ textarea {
   transform: translateX(-50%);
   z-index: 1;
   opacity: 0.2;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .za-hero-card .card-style-3 {
+    width: 300.01px;
+  }
+}
+@media (max-width: 767px) {
+  .za-hero-card .card-style-3 {
+    width: 223.4px;
+  }
 }
 .za-hero-card-money-box {
   display: grid;
