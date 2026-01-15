@@ -80,41 +80,82 @@
                 #CAFF33 100%) border-box;
 
         &-position {
-            & .position-image {
-                z-index: 2;
-                top: 10px;
-                right: -700px;
-
-                @media #{$xl,$lg,$md} {
-                    right: -580px;
-                }
-
-                & img {
-                    width: 417.95px;
-                    height: 382.73px;
+            & .position {
+                &-image {
+                    z-index: 2;
+                    top: 10px;
+                    right: -700px;
 
                     @media #{$xl,$lg,$md} {
-                        width: 250px;
-                        height: 225px;
+                        right: -580px;
+                    }
+
+                    & img {
+                        width: 417.95px;
+                        height: 382.73px;
+
+                        @media #{$xl,$lg,$md} {
+                            width: 250px;
+                            height: 225px;
+                        }
+                    }
+                }
+
+                &-price {
+                    width: 188.5px;
+                    height: 75.61px;
+                    background-color: #22251B;
+                    border-radius: 10.4px;
+                    z-index: 222;
+                    top: -32px;
+                    right: -124px;
+                    gap: 8px;
+                    padding: 13.87px 17.34px;
+                }
+
+                &-text {
+
+                    & h6,
+                    & p {
+                        margin-bottom: 0;
+                    }
+
+                    & h6 {
+                        font-size: 17.34px;
+                    }
+
+                    & p {
+                        margin-top: 8px;
+                        font-size: 13.87px;
+                    }
+                }
+
+                &-currency {
+                    width: 370.22px;
+                    height: 69.36px;
+                    border-radius: 69.36px;
+                    background-color: #22251B;
+                    z-index: 222;
+                    bottom: -87px;
+                    right: -575px;
+                    // gap: 14px;
+                    padding: 10px;
+
+                    & h6 {
+                        font-size: 15px;
+                        font-weight: var(--za-fw-regular);
+                        margin: 0 auto;
+                    }
+
+                    & .currency-icons {
+                        background-color: var(--za-cr-theme-grey-10);
+                        padding: 8.76px;
+                        border-radius: 47.69px;
+                        gap: 6.97px;
                     }
                 }
             }
-            & .position-price{
-                width: 100px;
-                height: 100px;
-                background-color: brown;
-                z-index: 222;
-                top: 0;
-                right: 0;
-            }
-                & .position-currency{
-                width: 100px;
-                height: 100px;
-                background-color: yellowgreen;
-                z-index: 222;
-                bottom: -100px;
-                right: 0;
-            }
+
         }
 
         &-top {

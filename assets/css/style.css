@@ -4035,20 +4035,46 @@ textarea {
   }
 }
 .za-hero-card-position .position-price {
-  width: 100px;
-  height: 100px;
-  background-color: brown;
+  width: 188.5px;
+  height: 75.61px;
+  background-color: #22251B;
+  border-radius: 10.4px;
   z-index: 222;
-  top: 0;
-  right: 0;
+  top: -32px;
+  right: -124px;
+  gap: 8px;
+  padding: 13.87px 17.34px;
+}
+.za-hero-card-position .position-text h6, .za-hero-card-position .position-text p {
+  margin-bottom: 0;
+}
+.za-hero-card-position .position-text h6 {
+  font-size: 17.34px;
+}
+.za-hero-card-position .position-text p {
+  margin-top: 8px;
+  font-size: 13.87px;
 }
 .za-hero-card-position .position-currency {
-  width: 100px;
-  height: 100px;
-  background-color: yellowgreen;
+  width: 370.22px;
+  height: 69.36px;
+  border-radius: 69.36px;
+  background-color: #22251B;
   z-index: 222;
-  bottom: -100px;
-  right: 0;
+  bottom: -87px;
+  right: -575px;
+  padding: 10px;
+}
+.za-hero-card-position .position-currency h6 {
+  font-size: 15px;
+  font-weight: var(--za-fw-regular);
+  margin: 0 auto;
+}
+.za-hero-card-position .position-currency .currency-icons {
+  background-color: var(--za-cr-theme-grey-10);
+  padding: 8.76px;
+  border-radius: 47.69px;
+  gap: 6.97px;
 }
 .za-hero-card-top {
   height: 225.02px;
