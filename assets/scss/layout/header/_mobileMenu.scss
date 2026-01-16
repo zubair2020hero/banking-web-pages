@@ -5,7 +5,6 @@
         & ul {
             & li {
                 position: relative;
-                // list-style: none;
 
                 &:last-child {
                     & a {
@@ -15,7 +14,6 @@
 
                 &:hover {
                     &>a {
-                        // background-color: var(--za-cr-theme-grey-15);
                         background-color: brown;
                     }
                 }
@@ -46,7 +44,6 @@
                     padding: 0 0 0 10px;
 
                     @include border-radius(10px);
-                    // background-color: var(--za-cr-theme-green-60);
                     background-color: var(--za-cr-theme-grey-11);
                     color: #fff;
                 }
