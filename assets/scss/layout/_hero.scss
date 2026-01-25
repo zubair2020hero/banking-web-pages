@@ -15,12 +15,15 @@
         &-title {
             color: var(--za-cr-text-absolute-white);
             background-color: var(--za-cr-theme-grey-15);
+            // background-color: blueviolet;
             font-size: 18px;
             font-weight: var(--za-fw-Light);
             padding: 5px 20px;
+            // width: 58%;
             width: 50%;
             height: 44px;
             margin: 0;
+            // line-height: 1.5;
             line-height: 1.8;
             @include border-radius(50px);
 
@@ -84,6 +87,7 @@
 
     &-card {
         width: 515.02px;
+        // height: 373.45px;
         padding: 34.68px;
         border-radius: 10.4px;
         border: 0.87px solid transparent;
@@ -177,6 +181,7 @@
                     z-index: 222;
                     bottom: -87px;
                     right: -575px;
+                    // gap: 14px;
                     padding: 10px;
 
                     @media #{$xl} {
@@ -364,6 +369,7 @@
         background: var(--za-cr-theme-green-60);
         color: var(--za-cr-common-black);
         font-weight: var(--za-fw-regular);
+        // border: 10px solid #ddd;
         width: 100%;
         max-height: 200px;
         overflow-y: auto;

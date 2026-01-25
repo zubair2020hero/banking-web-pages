@@ -99,7 +99,7 @@ document.querySelectorAll(".za--currency-dropdown").forEach(drop => {
         li.innerHTML = `
             <img src="https://flagcdn.com/w40/${cur.flag}.png">
             <span>${cur.code}</span>
-            <small>${cur.name}</small>
+            <small class="d-none d-md-block">${cur.name}</small>
         `;
 
         li.addEventListener("click", e => {
