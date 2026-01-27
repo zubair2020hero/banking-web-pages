@@ -1,4 +1,4 @@
-// Header Button
+// Header & products Button
 document.querySelectorAll('.za-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
         document.querySelectorAll('.za-btn.active').forEach(function (activeBtn) {
@@ -99,7 +99,6 @@ document.querySelectorAll(".za--currency-dropdown").forEach(drop => {
         li.innerHTML = `
             <img src="https://flagcdn.com/w40/${cur.flag}.png">
             <span>${cur.code}</span>
-            <small class="d-none d-md-block">${cur.name}</small>
         `;
 
         li.addEventListener("click", e => {

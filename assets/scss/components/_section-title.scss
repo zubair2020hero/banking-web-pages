@@ -1,26 +1,14 @@
-@use '../helper' as *;
-
-
+@use '../helper'as *;
 
 /*Section tite*/
 
-.za-section-top {
-    font-weight: var(--za-fw-medium);
-}
-
 .za-section-title {
-    font-size: 48px;
-    font-weight: var(--za-fw-semiBold);
-    color: var(--za-cr-darkBlue);
+    font-size: var(--za-fs-h2-desktop);
+    font-weight: var(--za-fw-medium);
+    color: var(--za-cr-text-absolute-white);
     margin-bottom: 20px;
-
-    @media #{$sm, $md, $od, $lg} {
-        font-size: 35px;
-    }
+    & span{
+        color: var(--za-cr-theme-green-60);
+    }    
 }
-
-.za-section-p {
-    color: var(--za-cr-darkBlue);
-}
-
 

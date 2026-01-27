@@ -313,6 +313,7 @@
             }
 
             &-flag {
+                height: 120px;
                 padding: 18px;
                 border-bottom: 1px solid var(--za-cr-theme-grey-15);
 
@@ -432,3 +433,7 @@
         margin: 0;
     }
 }
+
+//---
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }

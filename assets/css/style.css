@@ -423,6 +423,10 @@ textarea {
   position: absolute;
 }
 
+.border-right {
+  border-right: 1px solid var(--za-cr-theme-grey-15);
+}
+
 /** Spacing Style **/
 /*--Margin Top--*/
 .mt-1 {
@@ -3717,24 +3721,14 @@ textarea {
 }
 
 /*Section tite*/
-.za-section-top {
-  font-weight: var(--za-fw-medium);
-}
-
 .za-section-title {
-  font-size: 48px;
-  font-weight: var(--za-fw-semiBold);
-  color: var(--za-cr-darkBlue);
+  font-size: var(--za-fs-h2-desktop);
+  font-weight: var(--za-fw-medium);
+  color: var(--za-cr-text-absolute-white);
   margin-bottom: 20px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 300px) and (max-width: 750px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .za-section-title {
-    font-size: 35px;
-  }
-}
-
-.za-section-p {
-  color: var(--za-cr-darkBlue);
+.za-section-title span {
+  color: var(--za-cr-theme-green-60);
 }
 
 /***** Bootstrap Style *****/
@@ -4233,6 +4227,7 @@ textarea {
   border-right: none;
 }
 .za-hero-card-money-flag {
+  height: 120px;
   padding: 18px;
   border-bottom: 1px solid var(--za-cr-theme-grey-15);
 }
@@ -4328,6 +4323,25 @@ textarea {
 .za--amount::-webkit-inner-spin-button, .za--amount::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.grid-item {
+  width: 25%;
+}
+
+.grid-item--width2 {
+  width: 50%;
+}
+
+/***** Products Area *****/
+.za-products-btn {
+  background-color: var(--za-cr-theme-grey-11);
+  border: 2px solid var(--za-cr-theme-grey-15);
+  padding: 14px;
+  border-radius: 82px;
+}
+.za-products-grid-item {
+  padding: 0 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

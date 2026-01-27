@@ -1,6 +1,20 @@
 (function ($) {
     "use strict";
-  
+
+    // Products Area
+    var $grid = $('.za-products-grid').isotope({
+        // options
+        itemSelector: '.za-products-grid-item',
+        layoutMode: 'fitRows',
+        // filter: '.individuals',
+    });
+
+    $('.filter-button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
     // 01. Mobile Menu
     // $('#za-mobile-menu-active').meanmenu({
     //     meanMenuContainer: '.za-offcanvas-menu',
