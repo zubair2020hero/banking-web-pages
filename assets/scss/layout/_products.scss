@@ -9,16 +9,15 @@
         padding: 14px;
         border-radius: 82px;
 
-        @media #{$xs,$md} {
-            // display: flex;
-            // justify-content: center;
-            // // width: 50%;  
+        @media #{$od,$xs,$md} {
+            display: flex;
+            justify-content: center;
         }
 
         & .za-btn {
-            // @media #{$od,$xs,$md} {
-            //     font-size: 12px;
-            // }
+            @media #{$od,$xs,$md} {
+                font-size: 12px;
+            }
         }
     }
 

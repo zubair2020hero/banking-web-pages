@@ -4346,6 +4346,17 @@ textarea {
   padding: 14px;
   border-radius: 82px;
 }
+@media only screen and (min-width: 300px) and (max-width: 750px), (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-products-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 750px), (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-products-btn .za-btn {
+    font-size: 12px;
+  }
+}
 .za-products-grid-item {
   padding: 0 48px;
 }
