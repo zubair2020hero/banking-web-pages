@@ -70,3 +70,9 @@
 .border-right {
     border-right: 1px solid var(--za-cr-theme-grey-15);
 }
+
+.mr-t {
+    @media #{$od,$xs,$md,$lg} {
+        margin-top: 60px;
+    }
+}

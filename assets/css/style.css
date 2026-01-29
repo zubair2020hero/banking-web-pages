@@ -427,6 +427,12 @@ textarea {
   border-right: 1px solid var(--za-cr-theme-grey-15);
 }
 
+@media only screen and (min-width: 300px) and (max-width: 750px), (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mr-t {
+    margin-top: 60px;
+  }
+}
+
 /** Spacing Style **/
 /*--Margin Top--*/
 .mt-1 {

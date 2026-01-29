@@ -8,6 +8,18 @@
         border: 2px solid var(--za-cr-theme-grey-15);
         padding: 14px;
         border-radius: 82px;
+
+        @media #{$xs,$md} {
+            // display: flex;
+            // justify-content: center;
+            // // width: 50%;  
+        }
+
+        & .za-btn {
+            // @media #{$od,$xs,$md} {
+            //     font-size: 12px;
+            // }
+        }
     }
 
     &-grid {
