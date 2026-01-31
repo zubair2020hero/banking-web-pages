@@ -4361,4 +4361,38 @@ textarea {
   padding: 0 48px;
 }
 
+/***** Cases Area *****/
+.za-cases-area {
+  padding-top: 139px;
+  padding-bottom: 139px;
+}
+.za-cases-individuals-left {
+  background-color: brown;
+  padding: 46px;
+  width: 748px;
+}
+.za-cases-individuals-bg-img {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.za-cases-individuals-row {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  z-index: 11;
+}
+.za-cases-individuals-item {
+  background-color: var(--za-cr-theme-grey-10);
+  border: 1px solid var(--za-cr-theme-grey-15);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  width: 314px;
+}
+.za-cases-individuals-item h6 {
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: var(--za-fw-regular);
+}
+
 /*# sourceMappingURL=style.css.map */
