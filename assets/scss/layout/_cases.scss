@@ -9,10 +9,17 @@
 
     &-individuals {
         &-left {
-            // background-color: var(--za-cr-theme-grey-11);
-            background-color: brown;
+            background-color: var(--za-cr-theme-grey-11);
+            // background-color: brown;
+            border-radius: 20px;
             padding: 46px;
             width: 748px;
+
+            @media #{$xl} {
+                width: 610px;
+                 padding: 36px;
+            }
+
             // height: 534px;
         }
 
@@ -37,11 +44,26 @@
             padding: 30px;
             text-align: center;
             width: 314px;
+
+            @media #{$xl} {
+                width: 260px;
+                padding: 24px;
+            }
+
             // height: 200px;
-            & h6{
+            & h6 {
                 line-height: 1.5;
                 font-size: 20px;
                 font-weight: var(--za-fw-regular);
+
+                @media #{$xl} {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-couter{
+            & h1{
+                color: var(--za-cr-theme-green-60);
             }
         }
     }
