@@ -4366,29 +4366,29 @@ textarea {
   padding-top: 139px;
   padding-bottom: 139px;
 }
-.za-cases-individuals-left {
-  background-color: var(--za-cr-theme-grey-11);
+.za-cases-content-left {
+  background-color: brown;
   border-radius: 20px;
   padding: 46px;
   width: 748px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .za-cases-individuals-left {
+  .za-cases-content-left {
     width: 610px;
     padding: 36px;
   }
 }
-.za-cases-individuals-bg-img {
+.za-cases-content-bg-img {
   top: 0;
   left: 0;
   z-index: 1;
 }
-.za-cases-individuals-row {
+.za-cases-content-row {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   z-index: 11;
 }
-.za-cases-individuals-item {
+.za-cases-content-item {
   background-color: var(--za-cr-theme-grey-10);
   border: 1px solid var(--za-cr-theme-grey-15);
   border-radius: 16px;
@@ -4397,22 +4397,22 @@ textarea {
   width: 314px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .za-cases-individuals-item {
+  .za-cases-content-item {
     width: 260px;
     padding: 24px;
   }
 }
-.za-cases-individuals-item h6 {
+.za-cases-content-item h6 {
   line-height: 1.5;
   font-size: 20px;
   font-weight: var(--za-fw-regular);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .za-cases-individuals-item h6 {
+  .za-cases-content-item h6 {
     font-size: 16px;
   }
 }
-.za-cases-individuals-couter h1 {
+.za-cases-content-couter h1 {
   color: var(--za-cr-theme-green-60);
 }
 

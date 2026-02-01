@@ -7,10 +7,10 @@
         padding-bottom: 139px;
     }
 
-    &-individuals {
+    &-content {
         &-left {
-            background-color: var(--za-cr-theme-grey-11);
-            // background-color: brown;
+            // background-color: var(--za-cr-theme-grey-11);
+            background-color: brown;
             border-radius: 20px;
             padding: 46px;
             width: 748px;
@@ -19,7 +19,6 @@
                 width: 610px;
                  padding: 36px;
             }
-
             // height: 534px;
         }
 
