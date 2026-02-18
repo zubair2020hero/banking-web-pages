@@ -5,21 +5,49 @@
     &-area {
         padding-top: 139px;
         padding-bottom: 139px;
+
+        @media #{$lg} {
+            padding-top: 0;
+        }
     }
 
     &-content {
         &-left {
-            // background-color: var(--za-cr-theme-grey-11);
-            background-color: brown;
+            background-color: var(--za-cr-theme-grey-11);
+            // background-color: brown;
             border-radius: 20px;
             padding: 46px;
             width: 748px;
 
             @media #{$xl} {
                 width: 610px;
-                 padding: 36px;
+                padding: 36px;
             }
+
+            @media #{$xs,$sm,$md} {
+                width: 358px;
+                padding: 18px;
+            }
+
+            @media #{$xs,$sm,$md,$lg} {
+                margin: 0 auto;
+            }
+
             // height: 534px;
+        }
+
+        &-right {
+            @media #{$xs,$md,$lg} {
+                margin: 30px auto 30px auto;
+            }
+
+            @media #{$lg} {
+                width: 63%;
+            }
+
+            @media #{$md} {
+                width: 79%;
+            }
         }
 
         &-bg {
@@ -49,6 +77,11 @@
                 padding: 24px;
             }
 
+            @media #{$xs,$sm,$md} {
+                width: 154px;
+                padding: 14px;
+            }
+
             // height: 200px;
             & h6 {
                 line-height: 1.5;
@@ -58,12 +91,32 @@
                 @media #{$xl} {
                     font-size: 16px;
                 }
+
+                @media #{$xs,$sm,$md} {
+                    font-size: 14px;
+                    margin-top: 14px;
+                }
             }
         }
-        &-couter{
-            & h1{
+
+        &-couter {
+            & h1 {
                 color: var(--za-cr-theme-green-60);
             }
+        }
+
+    }
+}
+
+.za-content-btn {
+    & .za-btn-two {
+        background-color: var(--za-cr-theme-grey-11);
+        border: 1px solid var(--za-cr-theme-grey-15);
+        color: var(--za-cr-text-absolute-white);
+
+        &:hover {
+            border: 1px solid var(--za-cr-theme-green-60);
+            background-color: transparent;
         }
     }
 }

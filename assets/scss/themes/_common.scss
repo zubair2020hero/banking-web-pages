@@ -76,3 +76,15 @@
         margin-top: 60px;
     }
 }
+
+.desml {
+    @media #{$dl} {
+        margin-left: 40px;
+    }
+}
+
+.desmr {
+    @media #{$dl} {
+        margin-right: 40px;
+    }
+}

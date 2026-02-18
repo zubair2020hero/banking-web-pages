@@ -20,7 +20,7 @@
         2.1 Demo
     03. componets
     -----------------   
-        3   .1 Demo
+        3.1 Demo
     04. vendors
     -----------------   
         4.1 Demo
@@ -430,6 +430,18 @@ textarea {
 @media only screen and (min-width: 300px) and (max-width: 750px), (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .mr-t {
     margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1200px) {
+  .desml {
+    margin-left: 40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1200px) {
+  .desmr {
+    margin-right: 40px;
   }
 }
 
@@ -4366,8 +4378,13 @@ textarea {
   padding-top: 139px;
   padding-bottom: 139px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-cases-area {
+    padding-top: 0;
+  }
+}
 .za-cases-content-left {
-  background-color: brown;
+  background-color: var(--za-cr-theme-grey-11);
   border-radius: 20px;
   padding: 46px;
   width: 748px;
@@ -4376,6 +4393,32 @@ textarea {
   .za-cases-content-left {
     width: 610px;
     padding: 36px;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-cases-content-left {
+    width: 358px;
+    padding: 18px;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-cases-content-left {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-cases-content-right {
+    margin: 30px auto 30px auto;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .za-cases-content-right {
+    width: 63%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-cases-content-right {
+    width: 79%;
   }
 }
 .za-cases-content-bg-img {
@@ -4402,6 +4445,12 @@ textarea {
     padding: 24px;
   }
 }
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-cases-content-item {
+    width: 154px;
+    padding: 14px;
+  }
+}
 .za-cases-content-item h6 {
   line-height: 1.5;
   font-size: 20px;
@@ -4412,8 +4461,24 @@ textarea {
     font-size: 16px;
   }
 }
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .za-cases-content-item h6 {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+}
 .za-cases-content-couter h1 {
   color: var(--za-cr-theme-green-60);
+}
+
+.za-content-btn .za-btn-two {
+  background-color: var(--za-cr-theme-grey-11);
+  border: 1px solid var(--za-cr-theme-grey-15);
+  color: var(--za-cr-text-absolute-white);
+}
+.za-content-btn .za-btn-two:hover {
+  border: 1px solid var(--za-cr-theme-green-60);
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
