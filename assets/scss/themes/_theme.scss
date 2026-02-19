@@ -45,7 +45,6 @@ body {
     font-size: var(--za-fs-body-desktop);
     font-weight: var(--za-fw-Light);
     background-color: var(--za-cr-theme-grey-10);
-    // background-color: blueviolet;
     color: var(--za-cr-text-grey-70);
     line-height: 1.5;
 
@@ -55,12 +54,10 @@ body {
 
     @media #{$sm,$xs} {
         font-size: var(--za-fs-body-mobile);
-        // এই font Siza কোন media query নিব কাজের সময় ঠিক করবো। 
     }
 }
 
 a {
-    // color: inherit;
     text-decoration: none;
 }
 
@@ -86,7 +83,6 @@ h1 {
 
     @media #{$sm,$xs} {
         font-size: var(--za-fs-h1-mobile);
-        // এই font Siza কোন media query নিব কাজের সময় ঠিক করবো। 
     }
 }
 
@@ -99,7 +95,6 @@ h2 {
 
     @media #{$sm,$xs} {
         font-size: var(--za-fs-h2-mobile);
-        // এই font Siza কোন media query নিব কাজের সময় ঠিক করবো। 
     }
 }
 
@@ -112,7 +107,6 @@ h3 {
 
     @media #{$sm,$xs} {
         font-size: var(--za-fs-h3-mobile);
-        // এই font Siza কোন media query নিব কাজের সময় ঠিক করবো। 
     }
 }
 
@@ -151,7 +145,6 @@ h6 {
 
     @media #{$sm,$xs} {
         font-size: var(--za-fs-h6-mobile);
-        // এই font Siza কোন media query নিব কাজের সময় ঠিক করবো। 
     }
 }
 
